@@ -11,12 +11,14 @@
 
     <properties>
         <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <github.global.server>github</github.global.server>
         <github.global.oauth2Token>${env.github_token}</github.global.oauth2Token>
     </properties>
 
     <build>
-        <finalName>text-transformer</finalName>
+        <finalName>text-transformer-klient</finalName>
         <plugins>
             <plugin>
                 <groupId>com.github.github</groupId>
