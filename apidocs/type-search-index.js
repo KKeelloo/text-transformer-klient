@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"pl.put.poznan.transformerKlient.back","l":"KlientBackend"},{"p":"pl.put.poznan.transformerKlient.front","l":"KlientFrontend"},{"p":"pl.put.poznan.transformerKlient.app","l":"TextTransformerKlientApp"}]
