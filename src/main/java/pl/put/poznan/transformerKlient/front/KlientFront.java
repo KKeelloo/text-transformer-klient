@@ -1,10 +1,13 @@
 package pl.put.poznan.transformerKlient.front;
 
+import pl.put.poznan.transformerKlient.back.KlientBackend;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class KlientFront {
     private JPanel panelMain;
@@ -51,7 +54,47 @@ public class KlientFront {
         btnEnter.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //transform text
+                HashMap<String,String> map = new HashMap<>();
+                map.put("Zmiana na małe litery", "lower");
+                map.put("Rozwijanie skrótów", "short2str");
+                map.put("Zmiana na duże litery", "upper");
+                map.put("Pierwsze litery w każdym słowie duże", "capital");
+                map.put("Zwijanie do skrótów", "str2short");
+                map.put("Zmiana liczb całkowitych na słowa", "up2k");
+                map.put("Usuwanie powtarzających się słów", "rep");
+                map.put("Zmiana liczb zmiennoprzecinkowych na słowa", "rep");
+                map.put("Odwracanie ciągu zaków", "ix");
+                String text = txtInput.getText();
+                ArrayList<String> transforms = new ArrayList<>();
+                if(!comboBox9.getSelectedItem().equals("")){
+                    transforms.add(map.get(comboBox9.getSelectedItem()));
+                }
+                if(!comboBox8.getSelectedItem().equals("")){
+                    transforms.add(map.get(comboBox8.getSelectedItem()));
+                }
+                if(!comboBox7.getSelectedItem().equals("")){
+                    transforms.add(map.get(comboBox7.getSelectedItem()));
+                }
+                if(!comboBox6.getSelectedItem().equals("")){
+                    transforms.add(map.get(comboBox6.getSelectedItem()));
+                }
+                if(!comboBox5.getSelectedItem().equals("")){
+                    transforms.add(map.get(comboBox5.getSelectedItem()));
+                }
+                if(!comboBox4.getSelectedItem().equals("")){
+                    transforms.add(map.get(comboBox4.getSelectedItem()));
+                }
+                if(!comboBox3.getSelectedItem().equals("")){
+                    transforms.add(map.get(comboBox3.getSelectedItem()));
+                }
+                if(!comboBox2.getSelectedItem().equals("")){
+                    transforms.add(map.get(comboBox2.getSelectedItem()));
+                }
+                if(!comboBox1.getSelectedItem().equals("")){
+                    transforms.add(map.get(comboBox1.getSelectedItem()));
+                }
+                String resp = KlientBackend.request(text, transforms);
+                txtOutput.setText(resp);
             }
         });
         comboBox1.addActionListener(new ActionListener() {
