@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="pl.put.poznan.transformerKlient.front.KlientFront">
-  <grid id="27dc6" binding="panelMain" layout-manager="GridLayoutManager" row-count="21" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panelMain" layout-manager="GridLayoutManager" row-count="23" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="22" y="20" width="842" height="534"/>
+      <xy x="22" y="20" width="842" height="634"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
       <component id="a4a96" class="javax.swing.JButton" binding="btnReset">
         <constraints>
-          <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="22" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Reset"/>
@@ -18,7 +18,7 @@
       </component>
       <tabbedpane id="331da" binding="tabbedInput">
         <constraints>
-          <grid row="0" column="3" row-span="9" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="0" column="2" row-span="10" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="300" height="250"/>
           </grid>
         </constraints>
@@ -51,7 +51,7 @@
       </tabbedpane>
       <tabbedpane id="b15b6" binding="tabbedOutput">
         <constraints>
-          <grid row="9" column="3" row-span="12" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="10" column="2" row-span="13" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="200" height="200"/>
           </grid>
         </constraints>
@@ -83,81 +83,189 @@
           </grid>
         </children>
       </tabbedpane>
-      <component id="9f341" class="javax.swing.JCheckBox" binding="zwijanieDoSkrótówCheckBox">
+      <component id="450dc" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Zwijanie do skrótów"/>
+          <model>
+            <item value=""/>
+            <item value="Zmiana na małe litery"/>
+            <item value="Rozwijanie skrótów"/>
+            <item value="Zmiana na duże litery"/>
+            <item value="Pierwsze litery w każdym słowie duże"/>
+            <item value="Zwijanie do skrótów"/>
+            <item value="Zmiana liczb całkowitych na słowa"/>
+            <item value="Usuwanie powtarzających się słów"/>
+            <item value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
+            <item value="Odwracanie ciągu zaków"/>
+          </model>
         </properties>
       </component>
-      <component id="319f4" class="javax.swing.JCheckBox" binding="pierwszeLiteryWKażdymCheckBox" default-binding="true">
+      <component id="e0e9f" class="javax.swing.JComboBox" binding="comboBox2">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Pierwsze litery w każdym słowie duże"/>
+          <editable value="false"/>
+          <enabled value="false"/>
+          <model>
+            <item value=""/>
+            <item value="Rozwijanie skrótów"/>
+            <item value="Zmiana na duże litery"/>
+            <item value="Pierwsze litery w każdym słowie duże"/>
+            <item value="Zwijanie do skrótów"/>
+            <item value="Zmiana liczb całkowitych na słowa"/>
+            <item value="Usuwanie powtarzających się słów"/>
+            <item value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
+            <item value="Odwracanie ciągu zaków"/>
+            <item value="Zmiana na małe litery"/>
+          </model>
         </properties>
       </component>
-      <component id="1b6ce" class="javax.swing.JCheckBox" binding="zmianaNaDużeLiteryCheckBox">
+      <component id="3ad1d" class="javax.swing.JComboBox" binding="comboBox3">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Zmiana na duże litery "/>
+          <enabled value="false"/>
+          <model>
+            <item value=""/>
+            <item value="Zmiana na duże litery"/>
+            <item value="Pierwsze litery w każdym słowie duże"/>
+            <item value="Zwijanie do skrótów"/>
+            <item value="Zmiana liczb całkowitych na słowa"/>
+            <item value="Usuwanie powtarzających się słów"/>
+            <item value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
+            <item value="Odwracanie ciągu zaków"/>
+            <item value="Zmiana na małe litery"/>
+            <item value="Rozwijanie skrótów"/>
+          </model>
         </properties>
       </component>
-      <component id="d96b4" class="javax.swing.JCheckBox" binding="rozwijanieSkrótówCheckBox">
+      <component id="18bb4" class="javax.swing.JComboBox" binding="comboBox9">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="16" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Rozwijanie skrótów"/>
+          <enabled value="false"/>
+          <model>
+            <item value=""/>
+            <item value="Odwracanie ciągu zaków"/>
+            <item value="Zmiana na małe litery"/>
+            <item value="Rozwijanie skrótów"/>
+            <item value="Zmiana na duże litery"/>
+            <item value="Pierwsze litery w każdym słowie duże"/>
+            <item value="Zwijanie do skrótów"/>
+            <item value="Zmiana liczb całkowitych na słowa"/>
+            <item value="Usuwanie powtarzających się słów"/>
+            <item value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
+          </model>
         </properties>
       </component>
-      <component id="25805" class="javax.swing.JCheckBox" binding="zmianaNaMałeLiteryCheckBox">
+      <component id="959f3" class="javax.swing.JComboBox" binding="comboBox4">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Zmiana na małe litery"/>
+          <enabled value="false"/>
+          <model>
+            <item value=""/>
+            <item value="Pierwsze litery w każdym słowie duże"/>
+            <item value="Zwijanie do skrótów"/>
+            <item value="Zmiana liczb całkowitych na słowa"/>
+            <item value="Usuwanie powtarzających się słów"/>
+            <item value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
+            <item value="Odwracanie ciągu zaków"/>
+            <item value="Zmiana na małe litery"/>
+            <item value="Rozwijanie skrótów"/>
+            <item value="Zmiana na duże litery"/>
+          </model>
         </properties>
       </component>
-      <component id="f2d04" class="javax.swing.JCheckBox" binding="usuwaniePowtarzającychSięSłówCheckBox">
+      <component id="dc7f0" class="javax.swing.JComboBox" binding="comboBox5">
         <constraints>
-          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Usuwanie powtarzających się słów"/>
+          <enabled value="false"/>
+          <model>
+            <item value=""/>
+            <item value="Zwijanie do skrótów"/>
+            <item value="Zmiana liczb całkowitych na słowa"/>
+            <item value="Usuwanie powtarzających się słów"/>
+            <item value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
+            <item value="Odwracanie ciągu zaków"/>
+            <item value="Zmiana na małe litery"/>
+            <item value="Rozwijanie skrótów"/>
+            <item value="Zmiana na duże litery"/>
+            <item value="Pierwsze litery w każdym słowie duże"/>
+          </model>
         </properties>
       </component>
-      <component id="fa5d" class="javax.swing.JCheckBox" binding="zmianaLiczbZmiennoprzecinkowychNaCheckBox">
+      <component id="43fa0" class="javax.swing.JComboBox" binding="comboBox6">
         <constraints>
-          <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="10" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
+          <enabled value="false"/>
+          <model>
+            <item value=""/>
+            <item value="Zmiana liczb całkowitych na słowa"/>
+            <item value="Usuwanie powtarzających się słów"/>
+            <item value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
+            <item value="Odwracanie ciągu zaków"/>
+            <item value="Zmiana na małe litery"/>
+            <item value="Rozwijanie skrótów"/>
+            <item value="Zmiana na duże litery"/>
+            <item value="Pierwsze litery w każdym słowie duże"/>
+            <item value="Zwijanie do skrótów"/>
+          </model>
         </properties>
       </component>
-      <component id="e8365" class="javax.swing.JCheckBox" binding="odwracanieCiąguZakówCheckBox">
+      <component id="7d2d0" class="javax.swing.JComboBox" binding="comboBox7">
         <constraints>
-          <grid row="8" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="12" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Odwracanie ciągu zaków"/>
+          <enabled value="false"/>
+          <model>
+            <item value=""/>
+            <item value="Usuwanie powtarzających się słów"/>
+            <item value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
+            <item value="Odwracanie ciągu zaków"/>
+            <item value="Zmiana na małe litery"/>
+            <item value="Rozwijanie skrótów"/>
+            <item value="Zmiana na duże litery"/>
+            <item value="Pierwsze litery w każdym słowie duże"/>
+            <item value="Zwijanie do skrótów"/>
+            <item value="Zmiana liczb całkowitych na słowa"/>
+          </model>
         </properties>
       </component>
-      <component id="2b8e3" class="javax.swing.JCheckBox" binding="zmianaLiczbCałkowitychNaCheckBox">
+      <component id="27d1" class="javax.swing.JComboBox" binding="comboBox8">
         <constraints>
-          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="14" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Zmiana liczb całkowitych na słowa"/>
+          <enabled value="false"/>
+          <model>
+            <item value=""/>
+            <item value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
+            <item value="Odwracanie ciągu zaków"/>
+            <item value="Zmiana na małe litery"/>
+            <item value="Rozwijanie skrótów"/>
+            <item value="Zmiana na duże litery"/>
+            <item value="Pierwsze litery w każdym słowie duże"/>
+            <item value="Zwijanie do skrótów"/>
+            <item value="Zmiana liczb całkowitych na słowa"/>
+            <item value="Usuwanie powtarzających się słów"/>
+          </model>
         </properties>
       </component>
       <component id="3d3e7" class="javax.swing.JButton" binding="btnEnter">
         <constraints>
-          <grid row="20" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="22" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Enter"/>
