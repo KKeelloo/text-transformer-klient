@@ -19,6 +19,8 @@ public class KlientFront {
     private JCheckBox rozwijanieSkrótówCheckBox;
     private JCheckBox zmianaLiczbCałkowitychNaCheckBox;
     private JCheckBox usuwaniePowtarzającychSięSłówCheckBox;
+    private JTabbedPane tabbedInput;
+    private JTabbedPane tabbedOutput;
 
     public KlientFront() {
         btnReset.addActionListener(new ActionListener() {
@@ -33,5 +35,14 @@ public class KlientFront {
                 //transform text
             }
         });
+    }
+
+
+    public static void main(String[] args){
+        JFrame frame = new JFrame("Text-Transformer");
+        frame.setContentPane(new KlientFront().panelMain);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
     }
 }
