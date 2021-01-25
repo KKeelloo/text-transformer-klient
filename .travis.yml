@@ -11,13 +11,3 @@ notifications:
 after_success:
 - mvn --quiet clean site 
 
-before_deploy:
-  - "mvn -DskipTests package"
-
-deploy:
-  provider: releases
-  api_key: $github_token
-  skip_cleanup: true
-  file: target/text-transformer-klient.jar
-  on:
-    tags: true
