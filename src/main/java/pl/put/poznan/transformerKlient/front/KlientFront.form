@@ -99,6 +99,7 @@
             <item value="Usuwanie powtarzających się słów"/>
             <item value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
             <item value="Odwracanie ciągu zaków"/>
+            <item value="Text do formatu latex"/>
           </model>
         </properties>
       </component>
@@ -120,6 +121,7 @@
             <item value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
             <item value="Odwracanie ciągu zaków"/>
             <item value="Zmiana na małe litery"/>
+            <item value="Text do formatu latex"/>
           </model>
         </properties>
       </component>
@@ -140,6 +142,7 @@
             <item value="Odwracanie ciągu zaków"/>
             <item value="Zmiana na małe litery"/>
             <item value="Rozwijanie skrótów"/>
+            <item value="Text do formatu latex"/>
           </model>
         </properties>
       </component>
@@ -160,6 +163,7 @@
             <item value="Zmiana liczb całkowitych na słowa"/>
             <item value="Usuwanie powtarzających się słów"/>
             <item value="Zmiana liczb zmiennoprzecinkowych na słowa"/>
+            <item value="Text do formatu latex"/>
           </model>
         </properties>
       </component>
@@ -180,6 +184,7 @@
             <item value="Zmiana na małe litery"/>
             <item value="Rozwijanie skrótów"/>
             <item value="Zmiana na duże litery"/>
+            <item value="Text do formatu latex"/>
           </model>
         </properties>
       </component>
@@ -200,6 +205,7 @@
             <item value="Rozwijanie skrótów"/>
             <item value="Zmiana na duże litery"/>
             <item value="Pierwsze litery w każdym słowie duże"/>
+            <item value="Text do formatu latex"/>
           </model>
         </properties>
       </component>
@@ -220,6 +226,7 @@
             <item value="Zmiana na duże litery"/>
             <item value="Pierwsze litery w każdym słowie duże"/>
             <item value="Zwijanie do skrótów"/>
+            <item value="Text do formatu latex"/>
           </model>
         </properties>
       </component>
@@ -240,6 +247,7 @@
             <item value="Pierwsze litery w każdym słowie duże"/>
             <item value="Zwijanie do skrótów"/>
             <item value="Zmiana liczb całkowitych na słowa"/>
+            <item value="Text do formatu latex"/>
           </model>
         </properties>
       </component>
@@ -260,6 +268,7 @@
             <item value="Zwijanie do skrótów"/>
             <item value="Zmiana liczb całkowitych na słowa"/>
             <item value="Usuwanie powtarzających się słów"/>
+            <item value="Text do formatu latex"/>
           </model>
         </properties>
       </component>

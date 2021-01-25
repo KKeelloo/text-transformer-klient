@@ -62,8 +62,9 @@ public class KlientFront {
                 map.put("Zwijanie do skrótów", "str2short");
                 map.put("Zmiana liczb całkowitych na słowa", "up2k");
                 map.put("Usuwanie powtarzających się słów", "rep");
-                map.put("Zmiana liczb zmiennoprzecinkowych na słowa", "rep");
+                map.put("Zmiana liczb zmiennoprzecinkowych na słowa", "dd");
                 map.put("Odwracanie ciągu zaków", "ix");
+                map.put("Text do formatu latex", "latex");
                 String text = txtInput.getText();
                 ArrayList<String> transforms = new ArrayList<>();
                 if(!comboBox9.getSelectedItem().equals("")){
